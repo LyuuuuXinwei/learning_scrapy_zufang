@@ -11,7 +11,8 @@ Item 是保存爬取到的数据的容器
 '''
 
 class ZufangItem(scrapy.Item): #新建scrapy.Item的类
-    # define the fields for your item here like:
+    # 用scrapy.Field定义要爬取的元素:
     title = scrapy.Field()
     price = scrapy.Field()
+    #设定好之后，ZufangItem的实例（ganji.py-zf）就只能有title.price两种key，
     pass
